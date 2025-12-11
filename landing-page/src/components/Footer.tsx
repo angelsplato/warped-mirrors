@@ -9,7 +9,7 @@ function Footer() {
           <div className="lg:col-span-2">
             <h3 className="text-lg font-semibold text-white mb-3">warped mirrors</h3>
             <p className="text-zinc-400 text-sm leading-relaxed mb-4 max-w-sm">
-              intelligent document processing solutions that transform how teams work with data
+              catapulting africa to the forefront of the ai age with intelligent document processing solutions
             </p>
             <div className="flex gap-3">
               <a href="#" aria-label="Twitter" className="w-9 h-9 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-white hover:border-zinc-700 transition-colors">
@@ -40,10 +40,10 @@ function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-white mb-3">industries</h4>
             <ul className="space-y-2">
-              <li><a href="#industry-law" className="text-sm text-zinc-400 hover:text-white transition-colors">law</a></li>
-              <li><a href="#industry-government" className="text-sm text-zinc-400 hover:text-white transition-colors">government</a></li>
+              <li><a href="#industry-law" className="text-sm text-zinc-400 hover:text-white transition-colors">law firms</a></li>
+              <li><a href="#industry-finance" className="text-sm text-zinc-400 hover:text-white transition-colors">finance & banking</a></li>
               <li><a href="#industry-realestate" className="text-sm text-zinc-400 hover:text-white transition-colors">real estate</a></li>
-              <li><a href="#industry-finance" className="text-sm text-zinc-400 hover:text-white transition-colors">finance</a></li>
+              <li><a href="#industry-government" className="text-sm text-zinc-400 hover:text-white transition-colors">government</a></li>
             </ul>
           </div>
 
@@ -62,9 +62,14 @@ function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-zinc-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-zinc-500">
-              &copy; {currentYear} warped mirrors. all rights reserved.
-            </p>
+            <div className="text-center md:text-left">
+              <p className="text-sm text-zinc-500">
+                © {currentYear} warped mirrors™. all rights reserved.
+              </p>
+              <p className="text-xs text-zinc-600 mt-1">
+                warped mirrors and all associated logos are trademarks of warped mirrors inc.
+              </p>
+            </div>
             <div className="flex gap-6">
               <a href="#" className="text-sm text-zinc-500 hover:text-zinc-400 transition-colors">privacy policy</a>
               <a href="#" className="text-sm text-zinc-500 hover:text-zinc-400 transition-colors">terms of service</a>

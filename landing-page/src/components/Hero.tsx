@@ -8,11 +8,16 @@ function Hero() {
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 xl:gap-16 items-center">
           <div className="flex flex-col justify-center space-y-4 sm:space-y-6">
             <div className="space-y-3 sm:space-y-4">
+              <div className="inline-block">
+                <span className="text-xs sm:text-sm font-medium px-3 py-1 rounded-full bg-zinc-900 text-zinc-400 border border-zinc-800">
+                  catapulting africa to the forefront of the ai age
+                </span>
+              </div>
               <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-white leading-tight">
-                intelligent document processing for modern teams
+                turn every document into structured data
               </h1>
               <p className="max-w-[600px] text-zinc-400 text-base sm:text-lg leading-relaxed">
-                automate data extraction, streamline workflows, and transform unstructured documents into actionable insights
+                critical information is trapped in documents, inaccessible to the people and systems that need it. we unlock that information with ai-powered document intelligence—starting with scanwise.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">

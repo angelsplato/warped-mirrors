@@ -7,37 +7,52 @@ function Products() {
     {
       id: 'scanwise',
       title: 'scanwise',
-      description: 'intelligent document scanning and ocr',
+      tagline: 'turn every document into structured data',
+      description: 'document intelligence & text extraction',
       icon: Scan,
-      details: 'convert physical documents into searchable, editable digital formats with advanced recognition technology. our ai-powered scanning solution automatically detects document types, enhances image quality, and extracts text with industry-leading accuracy.'
+      details: 'ai-powered text extraction and document intelligence platform that transforms unstructured paper documents into clean, searchable, actionable data. whether you\'re dealing with contracts, case files, invoices, forms, or handwritten notes, scanwise automatically extracts key information and structures it for immediate use.',
+      features: ['intelligent text extraction from any document format', 'automatic field recognition and data structuring', 'multi-language support across african languages', 'batch processing for large document volumes', 'api integration for seamless workflow automation'],
+      status: 'ready for law firms | early access'
     },
     {
       id: 'knowhub',
       title: 'knowhub',
-      description: 'centralized knowledge management',
+      tagline: 'your organization\'s collective intelligence, searchable',
+      description: 'ai knowledge base',
       icon: BookOpen,
-      details: 'organize, search, and access your document library with ai-powered insights and recommendations. create a centralized knowledge base that learns from your content, suggests relevant documents, and helps teams find information faster.'
+      details: 'ai-powered knowledge base that captures, organizes, and makes searchable all institutional knowledge—documents, precedents, best practices, templates, and lessons learned. your team can instantly find relevant information using natural language search, and the ai continuously learns from your organization\'s collective experience.',
+      features: ['natural language search across all documents', 'automatic knowledge extraction from documents', 'ai-powered recommendations and similar document suggestions', 'version control for templates and precedents', 'integration with document libraries'],
+      status: 'coming soon'
     },
     {
       id: 'datadash',
       title: 'datadash',
-      description: 'real-time analytics dashboard',
+      tagline: 'see what your data is telling you',
+      description: 'analytics & insights engine',
       icon: Gauge,
-      details: 'visualize document metrics, processing status, and workflow performance at a glance. track key performance indicators, monitor processing bottlenecks, and gain actionable insights into your document operations with customizable dashboards.'
+      details: 'transforms your captured documents into visual intelligence. create automated dashboards, generate reports, identify patterns, and extract actionable insights from data that was previously locked in filing cabinets. datadash connects directly to your scanwise data and your existing systems.',
+      features: ['pre-built industry-specific dashboards', 'real-time analytics and reporting', 'pattern recognition and anomaly detection', 'predictive insights powered by machine learning', 'export reports in multiple formats'],
+      status: 'coming soon'
     },
     {
       id: 'formflow',
       title: 'formflow',
-      description: 'automated form processing',
+      tagline: 'replace paper processes with intelligent workflows',
+      description: 'process digitization & automation',
       icon: FileSpreadsheet,
-      details: 'extract structured data from forms and documents with intelligent field recognition. automate data entry, reduce manual errors, and process thousands of forms with configurable validation rules and export options.'
+      details: 'digitizes and automates your paper-based processes. transform manual intake forms, application workflows, approval processes, and client interactions into intelligent digital workflows powered by ai. routes documents automatically, validates information, and eliminates manual data entry.',
+      features: ['drag-and-drop form builder', 'pre-built templates for common industry processes', 'intelligent field validation and auto-population', 'workflow automation and routing rules', 'e-signature integration'],
+      status: 'coming soon'
     },
     {
       id: 'dataengine',
       title: 'dataengine',
-      description: 'custom data extraction pipelines',
+      tagline: 'build ai that understands your business',
+      description: 'custom ai model training',
       icon: Database,
-      details: 'build tailored workflows to extract, validate, and transform document data at scale. design custom extraction rules, integrate with your existing systems, and process millions of documents with enterprise-grade reliability.'
+      details: 'empowers organizations to train custom ai models on their own data. no data science expertise needed. using your documents and historical data, dataengine learns your specific business rules, document types, and processes—then creates ai tools tailored to your unique workflows.',
+      features: ['no-code model training interface', 'automatic model optimization', 'continuous learning and improvement', 'explainable ai—understand why decisions are made', 'deploy models with one click'],
+      status: 'coming soon'
     }
   ]
 
@@ -74,18 +89,37 @@ function Products() {
               <TabsContent key={product.id} value={product.id} id={`product-${product.id}`}>
                 <Card className="border-zinc-800 bg-zinc-950">
                   <CardHeader>
-                    <div className="flex items-center gap-3 mb-2">
-                      <Icon className="h-8 w-8 text-zinc-400" />
-                      <CardTitle className="text-white text-2xl font-semibold">{product.title}</CardTitle>
+                    <div className="flex items-start justify-between mb-3">
+                      <div className="flex items-center gap-3">
+                        <Icon className="h-8 w-8 text-zinc-400" />
+                        <div>
+                          <CardTitle className="text-white text-2xl font-semibold mb-1">{product.title}</CardTitle>
+                          <p className="text-sm text-zinc-500 italic">{product.tagline}</p>
+                        </div>
+                      </div>
+                      <span className="text-xs px-3 py-1 rounded-full bg-zinc-900 text-zinc-400 border border-zinc-800">
+                        {product.status}
+                      </span>
                     </div>
                     <CardDescription className="text-zinc-400 text-base">
                       {product.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="space-y-4">
                     <p className="text-sm sm:text-base text-zinc-500 leading-relaxed">
                       {product.details}
                     </p>
+                    <div>
+                      <h4 className="text-sm font-semibold text-white mb-2">key features:</h4>
+                      <ul className="space-y-2">
+                        {product.features.map((feature, idx) => (
+                          <li key={idx} className="text-sm text-zinc-500 flex items-start gap-2">
+                            <span className="text-zinc-600 mt-1">•</span>
+                            <span>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </CardContent>
                 </Card>
               </TabsContent>

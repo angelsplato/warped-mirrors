@@ -55,7 +55,7 @@ function Header() {
                       <Scan className="h-4 w-4" />
                       <span className="font-medium">ScanWise</span>
                     </div>
-                    <span className="text-xs text-zinc-500">document scanning & ocr</span>
+                    <span className="text-xs text-zinc-500">document intelligence & text extraction</span>
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
@@ -64,7 +64,7 @@ function Header() {
                       <BookOpen className="h-4 w-4" />
                       <span className="font-medium">KnowHub</span>
                     </div>
-                    <span className="text-xs text-zinc-500">knowledge management</span>
+                    <span className="text-xs text-zinc-500">ai knowledge base</span>
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
@@ -73,7 +73,7 @@ function Header() {
                       <Gauge className="h-4 w-4" />
                       <span className="font-medium">DataDash</span>
                     </div>
-                    <span className="text-xs text-zinc-500">analytics dashboard</span>
+                    <span className="text-xs text-zinc-500">analytics & insights engine</span>
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
@@ -82,7 +82,7 @@ function Header() {
                       <FileSpreadsheet className="h-4 w-4" />
                       <span className="font-medium">FormFlow</span>
                     </div>
-                    <span className="text-xs text-zinc-500">form processing</span>
+                    <span className="text-xs text-zinc-500">process digitization & automation</span>
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
@@ -91,7 +91,7 @@ function Header() {
                       <Database className="h-4 w-4" />
                       <span className="font-medium">DataEngine</span>
                     </div>
-                    <span className="text-xs text-zinc-500">data extraction</span>
+                    <span className="text-xs text-zinc-500">custom ai model training</span>
                   </a>
                 </DropdownMenuItem>
               </div>
@@ -108,18 +108,18 @@ function Header() {
                   <a href="#industry-law" className="text-zinc-300 hover:text-white hover:bg-zinc-800 cursor-pointer flex flex-col items-start gap-1 p-3 rounded-md">
                     <div className="flex items-center gap-2">
                       <Scale className="h-4 w-4" />
-                      <span className="font-medium">Law</span>
+                      <span className="font-medium">Law Firms</span>
                     </div>
-                    <span className="text-xs text-zinc-500">legal document review</span>
+                    <span className="text-xs text-zinc-500">case management & contracts</span>
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <a href="#industry-government" className="text-zinc-300 hover:text-white hover:bg-zinc-800 cursor-pointer flex flex-col items-start gap-1 p-3 rounded-md">
+                  <a href="#industry-finance" className="text-zinc-300 hover:text-white hover:bg-zinc-800 cursor-pointer flex flex-col items-start gap-1 p-3 rounded-md">
                     <div className="flex items-center gap-2">
-                      <Building2 className="h-4 w-4" />
-                      <span className="font-medium">Government</span>
+                      <DollarSign className="h-4 w-4" />
+                      <span className="font-medium">Finance & Banking</span>
                     </div>
-                    <span className="text-xs text-zinc-500">public records digitization</span>
+                    <span className="text-xs text-zinc-500">loans & compliance</span>
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
@@ -128,16 +128,16 @@ function Header() {
                       <Home className="h-4 w-4" />
                       <span className="font-medium">Real Estate</span>
                     </div>
-                    <span className="text-xs text-zinc-500">property transactions</span>
+                    <span className="text-xs text-zinc-500">property & portfolio management</span>
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <a href="#industry-finance" className="text-zinc-300 hover:text-white hover:bg-zinc-800 cursor-pointer flex flex-col items-start gap-1 p-3 rounded-md">
+                  <a href="#industry-government" className="text-zinc-300 hover:text-white hover:bg-zinc-800 cursor-pointer flex flex-col items-start gap-1 p-3 rounded-md">
                     <div className="flex items-center gap-2">
-                      <DollarSign className="h-4 w-4" />
-                      <span className="font-medium">Finance</span>
+                      <Building2 className="h-4 w-4" />
+                      <span className="font-medium">Government</span>
                     </div>
-                    <span className="text-xs text-zinc-500">financial document processing</span>
+                    <span className="text-xs text-zinc-500">permits & citizen services</span>
                   </a>
                 </DropdownMenuItem>
               </div>
@@ -223,19 +223,19 @@ function Header() {
                   <div className="flex flex-col gap-2">
                     <a href="#industry-law" className="flex items-center gap-2 text-sm text-zinc-400 hover:text-white py-2">
                       <Scale className="h-4 w-4" />
-                      law
+                      law firms
                     </a>
-                    <a href="#industry-government" className="flex items-center gap-2 text-sm text-zinc-400 hover:text-white py-2">
-                      <Building2 className="h-4 w-4" />
-                      government
+                    <a href="#industry-finance" className="flex items-center gap-2 text-sm text-zinc-400 hover:text-white py-2">
+                      <DollarSign className="h-4 w-4" />
+                      finance & banking
                     </a>
                     <a href="#industry-realestate" className="flex items-center gap-2 text-sm text-zinc-400 hover:text-white py-2">
                       <Home className="h-4 w-4" />
                       real estate
                     </a>
-                    <a href="#industry-finance" className="flex items-center gap-2 text-sm text-zinc-400 hover:text-white py-2">
-                      <DollarSign className="h-4 w-4" />
-                      finance
+                    <a href="#industry-government" className="flex items-center gap-2 text-sm text-zinc-400 hover:text-white py-2">
+                      <Building2 className="h-4 w-4" />
+                      government
                     </a>
                   </div>
                 </div>
