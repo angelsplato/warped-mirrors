@@ -1,31 +1,33 @@
 import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 
 function Hero() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-b from-zinc-50 to-white dark:from-zinc-950 dark:to-zinc-900">
-      <div className="container px-4 md:px-6">
-        <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-          <div className="flex flex-col justify-center space-y-4">
-            <div className="space-y-2">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-gradient-to-r from-zinc-900 to-zinc-600 dark:from-zinc-100 dark:to-zinc-400 bg-clip-text text-transparent">
-                Transform Your Reality
+    <section className="w-full py-12 sm:py-16 md:py-24 lg:py-32 xl:py-40 bg-zinc-950" style={{ fontFamily: 'Inter, sans-serif' }}>
+      <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-24">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 xl:gap-16 items-center">
+          <div className="flex flex-col justify-center space-y-4 sm:space-y-6">
+            <div className="space-y-3 sm:space-y-4">
+              <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-white leading-tight">
+                intelligent document processing for modern teams
               </h1>
-              <p className="max-w-[600px] text-zinc-600 dark:text-zinc-400 md:text-xl">
-                Experience the next generation of immersive technology that bends perception and creates unforgettable experiences
+              <p className="max-w-[600px] text-zinc-400 text-base sm:text-lg leading-relaxed">
+                automate data extraction, streamline workflows, and transform unstructured documents into actionable insights
               </p>
             </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button size="lg" className="bg-zinc-900 hover:bg-zinc-800 text-white">
-                Start Free Trial
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Button size="lg" className="bg-white hover:bg-zinc-100 text-zinc-950 flex items-center justify-center gap-2 w-full sm:w-auto">
+                book a demo
+                <ArrowRight className="h-4 w-4" />
               </Button>
-              <Button size="lg" variant="outline">
-                Watch Demo
+              <Button size="lg" variant="outline" className="border-zinc-700 text-zinc-300 hover:bg-zinc-900 hover:text-white w-full sm:w-auto" asChild>
+                <a href="#products">explore products</a>
               </Button>
             </div>
           </div>
-          <div className="flex items-center justify-center">
-            <div className="relative w-full h-[400px] rounded-xl bg-gradient-to-br from-zinc-200 to-zinc-300 dark:from-zinc-800 dark:to-zinc-900 flex items-center justify-center border border-zinc-200 dark:border-zinc-800">
-              <span className="text-zinc-500 dark:text-zinc-500 font-semibold text-lg">Hero Image</span>
+          <div className="flex items-center justify-center order-first lg:order-last">
+            <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-lg bg-zinc-900 flex items-center justify-center border border-zinc-800">
+              <span className="text-zinc-600 font-medium text-xs sm:text-sm">product visualization</span>
             </div>
           </div>
         </div>

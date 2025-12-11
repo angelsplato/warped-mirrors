@@ -6,6 +6,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '2rem',
+        sm: '3rem',
+        md: '4rem',
+        lg: '6rem',
+        xl: '8rem',
+        '2xl': '10rem',
+      },
+      screens: {
+        '2xl': '1400px',
+      },
+    },
     extend: {
       borderRadius: {
         lg: "var(--radius)",

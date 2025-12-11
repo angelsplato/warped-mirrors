@@ -1,70 +1,100 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Scan, BookOpen, Gauge, FileSpreadsheet, Database } from "lucide-react"
 
-function Features() {
-  const features = [
+function Products() {
+  const products = [
     {
-      title: 'Immersive Experience',
-      description: 'Step into a world where reality and imagination blend seamlessly',
-      icon: '🌟'
+      id: 'scanwise',
+      title: 'scanwise',
+      description: 'intelligent document scanning and ocr',
+      icon: Scan,
+      details: 'convert physical documents into searchable, editable digital formats with advanced recognition technology. our ai-powered scanning solution automatically detects document types, enhances image quality, and extracts text with industry-leading accuracy.'
     },
     {
-      title: 'Real-Time Processing',
-      description: 'Lightning-fast performance that adapts to your every movement',
-      icon: '⚡'
+      id: 'knowhub',
+      title: 'knowhub',
+      description: 'centralized knowledge management',
+      icon: BookOpen,
+      details: 'organize, search, and access your document library with ai-powered insights and recommendations. create a centralized knowledge base that learns from your content, suggests relevant documents, and helps teams find information faster.'
     },
     {
-      title: 'Secure & Private',
-      description: 'Your data is encrypted and protected with industry-leading security',
-      icon: '🔒'
+      id: 'datadash',
+      title: 'datadash',
+      description: 'real-time analytics dashboard',
+      icon: Gauge,
+      details: 'visualize document metrics, processing status, and workflow performance at a glance. track key performance indicators, monitor processing bottlenecks, and gain actionable insights into your document operations with customizable dashboards.'
     },
     {
-      title: 'Cross-Platform',
-      description: 'Works seamlessly across all your devices and platforms',
-      icon: '🌐'
+      id: 'formflow',
+      title: 'formflow',
+      description: 'automated form processing',
+      icon: FileSpreadsheet,
+      details: 'extract structured data from forms and documents with intelligent field recognition. automate data entry, reduce manual errors, and process thousands of forms with configurable validation rules and export options.'
     },
     {
-      title: 'AI-Powered',
-      description: 'Advanced algorithms that learn and adapt to your preferences',
-      icon: '🤖'
-    },
-    {
-      title: '24/7 Support',
-      description: 'Our team is always here to help you succeed',
-      icon: '💬'
+      id: 'dataengine',
+      title: 'dataengine',
+      description: 'custom data extraction pipelines',
+      icon: Database,
+      details: 'build tailored workflows to extract, validate, and transform document data at scale. design custom extraction rules, integrate with your existing systems, and process millions of documents with enterprise-grade reliability.'
     }
   ]
 
   return (
-    <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-zinc-900">
-      <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Powerful Features
-            </h2>
-            <p className="max-w-[900px] text-zinc-600 dark:text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Everything you need to transform your experience
-            </p>
-          </div>
+    <section id="products" className="w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-zinc-900" style={{ fontFamily: 'Inter, sans-serif' }}>
+      <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-24">
+        <div className="flex flex-col space-y-2 sm:space-y-3 mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white">products</h2>
+          <p className="max-w-[700px] text-zinc-400 text-sm sm:text-base">
+            powerful tools designed to streamline your document workflows
+          </p>
         </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature, index) => (
-            <Card key={index} className="bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 transition-all hover:shadow-lg hover:scale-105">
-              <CardHeader>
-                <div className="text-5xl mb-2">{feature.icon}</div>
-                <CardTitle className="text-xl">{feature.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-zinc-600 dark:text-zinc-400">
-                  {feature.description}
-                </CardDescription>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+
+        <Tabs defaultValue="scanwise" className="w-full">
+          <TabsList className="w-full flex flex-wrap justify-start gap-2 h-auto bg-zinc-950 p-2 mb-6">
+            {products.map((product) => {
+              const Icon = product.icon
+              return (
+                <TabsTrigger
+                  key={product.id}
+                  value={product.id}
+                  className="flex items-center gap-2 data-[state=active]:bg-zinc-800 data-[state=active]:text-white text-zinc-400"
+                >
+                  <Icon className="h-4 w-4" />
+                  <span className="hidden sm:inline">{product.title}</span>
+                </TabsTrigger>
+              )
+            })}
+          </TabsList>
+
+          {products.map((product) => {
+            const Icon = product.icon
+            return (
+              <TabsContent key={product.id} value={product.id} id={`product-${product.id}`}>
+                <Card className="border-zinc-800 bg-zinc-950">
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-2">
+                      <Icon className="h-8 w-8 text-zinc-400" />
+                      <CardTitle className="text-white text-2xl font-semibold">{product.title}</CardTitle>
+                    </div>
+                    <CardDescription className="text-zinc-400 text-base">
+                      {product.description}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm sm:text-base text-zinc-500 leading-relaxed">
+                      {product.details}
+                    </p>
+                  </CardContent>
+                </Card>
+              </TabsContent>
+            )
+          })}
+        </Tabs>
       </div>
     </section>
   )
 }
 
-export default Features
+export default Products
