@@ -1,6 +1,6 @@
 .social-proof {
   padding: 6rem 2rem;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: hsl(var(--muted));
 }
 
 .social-proof-container {
@@ -18,24 +18,21 @@
 .stat-item {
   text-align: center;
   padding: 2rem;
-  background: white;
+  background: hsl(var(--card));
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid hsl(var(--border));
 }
 
 .stat-value {
   font-size: 2.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: hsl(var(--foreground));
   margin-bottom: 0.5rem;
 }
 
 .stat-label {
   font-size: 1rem;
-  color: #4a5568;
+  color: hsl(var(--muted-foreground));
 }
 
 .testimonials-section {
@@ -45,7 +42,7 @@
 .testimonials-section h2 {
   text-align: center;
   font-size: 2.5rem;
-  color: #1a202c;
+  color: hsl(var(--foreground));
   margin-bottom: 3rem;
 }
 
@@ -56,10 +53,10 @@
 }
 
 .testimonial-card {
-  background: white;
+  background: hsl(var(--card));
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid hsl(var(--border));
 }
 
 .rating {
@@ -69,7 +66,7 @@
 }
 
 .testimonial-content {
-  color: #4a5568;
+  color: hsl(var(--muted-foreground));
   line-height: 1.6;
   margin-bottom: 1.5rem;
   font-style: italic;
@@ -81,12 +78,12 @@
 }
 
 .testimonial-author strong {
-  color: #1a202c;
+  color: hsl(var(--foreground));
   margin-bottom: 0.25rem;
 }
 
 .testimonial-author span {
-  color: #718096;
+  color: hsl(var(--muted-foreground));
   font-size: 0.9rem;
 }
 
@@ -95,7 +92,7 @@
 }
 
 .companies-label {
-  color: #4a5568;
+  color: hsl(var(--muted-foreground));
   font-size: 1rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
@@ -111,9 +108,10 @@
 
 .company-logo {
   padding: 1rem 2rem;
-  background: white;
+  background: hsl(var(--card));
   border-radius: 8px;
-  color: #667eea;
+  color: hsl(var(--foreground));
+  border: 1px solid hsl(var(--border));
   font-weight: 600;
   font-size: 1.1rem;
 }
