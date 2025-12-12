@@ -4,16 +4,18 @@ phases:
   pre_build:
     commands:
       - echo Installing dependencies...
+      - cd warped-mirrors/landing-page
       - npm ci
   build:
     commands:
       - echo Build started on `date`
+      - cd warped-mirrors/landing-page
       - npm run build
       - echo Build completed on `date`
 artifacts:
   files:
     - '**/*'
-  base-directory: dist
+  base-directory: warped-mirrors/landing-page/dist
 cache:
   paths:
-    - 'node_modules/**/*'
+    - 'warped-mirrors/landing-page/node_modules/**/*'
