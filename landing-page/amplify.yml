@@ -1,18 +1,18 @@
 version: 1
-frontend:
-  phases:
-    preBuild:
-      commands:
-        - cd warped-mirrors/landing-page
-        - npm ci
-    build:
-      commands:
-        - cd warped-mirrors/landing-page
-        - npm run build
-  artifacts:
-    baseDirectory: warped-mirrors/landing-page/dist
-    files:
-      - '**/*'
-  cache:
-    paths:
-      - warped-mirrors/landing-page/node_modules/**/*
+applications:
+  - appRoot: warped-mirrors/landing-page
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - npm ci
+        build:
+          commands:
+            - npm run build
+      artifacts:
+        baseDirectory: dist
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
