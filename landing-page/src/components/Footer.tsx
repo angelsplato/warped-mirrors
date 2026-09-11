@@ -28,11 +28,11 @@ function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-white mb-3">products</h4>
             <ul className="space-y-1">
-              <li><a href="#product-scanwise" className="flex min-h-10 items-center text-base text-zinc-400 hover:text-white transition-colors">scanwise</a></li>
-              <li><a href="#product-knowhub" className="flex min-h-10 items-center text-base text-zinc-400 hover:text-white transition-colors">knowhub</a></li>
-              <li><a href="#product-datadash" className="flex min-h-10 items-center text-base text-zinc-400 hover:text-white transition-colors">datadash</a></li>
-              <li><a href="#product-formflow" className="flex min-h-10 items-center text-base text-zinc-400 hover:text-white transition-colors">formflow</a></li>
-              <li><a href="#product-dataengine" className="flex min-h-10 items-center text-base text-zinc-400 hover:text-white transition-colors">dataengine</a></li>
+              <li><a href="#product-scanwise" className="flex min-h-11 items-center text-base text-zinc-400 hover:text-white transition-colors">scanwise</a></li>
+              <li><a href="#product-knowhub" className="flex min-h-11 items-center text-base text-zinc-400 hover:text-white transition-colors">knowhub</a></li>
+              <li><a href="#product-datadash" className="flex min-h-11 items-center text-base text-zinc-400 hover:text-white transition-colors">datadash</a></li>
+              <li><a href="#product-formflow" className="flex min-h-11 items-center text-base text-zinc-400 hover:text-white transition-colors">formflow</a></li>
+              <li><a href="#product-dataengine" className="flex min-h-11 items-center text-base text-zinc-400 hover:text-white transition-colors">dataengine</a></li>
             </ul>
           </div>
 
@@ -40,10 +40,10 @@ function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-white mb-3">industries</h4>
             <ul className="space-y-1">
-              <li><a href="#industry-law" className="flex min-h-10 items-center text-base text-zinc-400 hover:text-white transition-colors">law firms</a></li>
-              <li><a href="#industry-finance" className="flex min-h-10 items-center text-base text-zinc-400 hover:text-white transition-colors">finance & banking</a></li>
-              <li><a href="#industry-realestate" className="flex min-h-10 items-center text-base text-zinc-400 hover:text-white transition-colors">real estate</a></li>
-              <li><a href="#industry-government" className="flex min-h-10 items-center text-base text-zinc-400 hover:text-white transition-colors">government</a></li>
+              <li><a href="#industry-law" className="flex min-h-11 items-center text-base text-zinc-400 hover:text-white transition-colors">law firms</a></li>
+              <li><a href="#industry-finance" className="flex min-h-11 items-center text-base text-zinc-400 hover:text-white transition-colors">finance & banking</a></li>
+              <li><a href="#industry-realestate" className="flex min-h-11 items-center text-base text-zinc-400 hover:text-white transition-colors">real estate</a></li>
+              <li><a href="#industry-government" className="flex min-h-11 items-center text-base text-zinc-400 hover:text-white transition-colors">government</a></li>
             </ul>
           </div>
 
@@ -51,10 +51,10 @@ function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-white mb-3">company</h4>
             <ul className="space-y-1">
-              <li><a href="#about" className="flex min-h-10 items-center text-base text-zinc-400 hover:text-white transition-colors">about</a></li>
-              <li><a href="#contact" className="flex min-h-10 items-center text-base text-zinc-400 hover:text-white transition-colors">contact us</a></li>
-              <li><a href="#security" className="flex min-h-10 items-center text-base text-zinc-400 hover:text-white transition-colors">security</a></li>
-              <li><a href="#" className="flex min-h-10 items-center text-base text-zinc-400 hover:text-white transition-colors">careers</a></li>
+              <li><a href="#about" className="flex min-h-11 items-center text-base text-zinc-400 hover:text-white transition-colors">about</a></li>
+              <li><a href="#contact" className="flex min-h-11 items-center text-base text-zinc-400 hover:text-white transition-colors">contact us</a></li>
+              <li><a href="#security" className="flex min-h-11 items-center text-base text-zinc-400 hover:text-white transition-colors">security</a></li>
+              <li><a href="#" className="flex min-h-11 items-center text-base text-zinc-400 hover:text-white transition-colors">careers</a></li>
             </ul>
           </div>
         </div>
@@ -71,9 +71,9 @@ function Footer() {
               </p>
             </div>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
-              <a href="#" className="flex min-h-10 items-center text-sm text-zinc-500 hover:text-zinc-400 transition-colors">privacy policy</a>
-              <a href="#" className="flex min-h-10 items-center text-sm text-zinc-500 hover:text-zinc-400 transition-colors">terms of service</a>
-              <a href="#" className="flex min-h-10 items-center text-sm text-zinc-500 hover:text-zinc-400 transition-colors">cookies</a>
+              <a href="#" className="flex min-h-11 items-center text-sm text-zinc-500 hover:text-zinc-400 transition-colors">privacy policy</a>
+              <a href="#" className="flex min-h-11 items-center text-sm text-zinc-500 hover:text-zinc-400 transition-colors">terms of service</a>
+              <a href="#" className="flex min-h-11 items-center text-sm text-zinc-500 hover:text-zinc-400 transition-colors">cookies</a>
             </div>
           </div>
         </div>

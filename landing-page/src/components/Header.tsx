@@ -194,23 +194,23 @@ function Header() {
                 <div>
                   <h3 className="text-sm font-semibold text-white mb-3">products</h3>
                   <div className="flex flex-col gap-2">
-                    <a href="#product-scanwise" className="flex min-h-10 items-center gap-2 text-base text-zinc-400 hover:text-white">
+                    <a href="#product-scanwise" className="flex min-h-11 items-center gap-2 text-base text-zinc-400 hover:text-white">
                       <Scan className="h-4 w-4" />
                       scanwise
                     </a>
-                    <a href="#product-knowhub" className="flex min-h-10 items-center gap-2 text-base text-zinc-400 hover:text-white">
+                    <a href="#product-knowhub" className="flex min-h-11 items-center gap-2 text-base text-zinc-400 hover:text-white">
                       <BookOpen className="h-4 w-4" />
                       knowhub
                     </a>
-                    <a href="#product-datadash" className="flex min-h-10 items-center gap-2 text-base text-zinc-400 hover:text-white">
+                    <a href="#product-datadash" className="flex min-h-11 items-center gap-2 text-base text-zinc-400 hover:text-white">
                       <Gauge className="h-4 w-4" />
                       datadash
                     </a>
-                    <a href="#product-formflow" className="flex min-h-10 items-center gap-2 text-base text-zinc-400 hover:text-white">
+                    <a href="#product-formflow" className="flex min-h-11 items-center gap-2 text-base text-zinc-400 hover:text-white">
                       <FileSpreadsheet className="h-4 w-4" />
                       formflow
                     </a>
-                    <a href="#product-dataengine" className="flex min-h-10 items-center gap-2 text-base text-zinc-400 hover:text-white">
+                    <a href="#product-dataengine" className="flex min-h-11 items-center gap-2 text-base text-zinc-400 hover:text-white">
                       <Database className="h-4 w-4" />
                       dataengine
                     </a>
@@ -221,19 +221,19 @@ function Header() {
                 <div>
                   <h3 className="text-sm font-semibold text-white mb-3">industries</h3>
                   <div className="flex flex-col gap-2">
-                    <a href="#industry-law" className="flex min-h-10 items-center gap-2 text-base text-zinc-400 hover:text-white">
+                    <a href="#industry-law" className="flex min-h-11 items-center gap-2 text-base text-zinc-400 hover:text-white">
                       <Scale className="h-4 w-4" />
                       law firms
                     </a>
-                    <a href="#industry-finance" className="flex min-h-10 items-center gap-2 text-base text-zinc-400 hover:text-white">
+                    <a href="#industry-finance" className="flex min-h-11 items-center gap-2 text-base text-zinc-400 hover:text-white">
                       <DollarSign className="h-4 w-4" />
                       finance & banking
                     </a>
-                    <a href="#industry-realestate" className="flex min-h-10 items-center gap-2 text-base text-zinc-400 hover:text-white">
+                    <a href="#industry-realestate" className="flex min-h-11 items-center gap-2 text-base text-zinc-400 hover:text-white">
                       <Home className="h-4 w-4" />
                       real estate
                     </a>
-                    <a href="#industry-government" className="flex min-h-10 items-center gap-2 text-base text-zinc-400 hover:text-white">
+                    <a href="#industry-government" className="flex min-h-11 items-center gap-2 text-base text-zinc-400 hover:text-white">
                       <Building2 className="h-4 w-4" />
                       government
                     </a>
@@ -244,15 +244,15 @@ function Header() {
                 <div>
                   <h3 className="text-sm font-semibold text-white mb-3">resources</h3>
                   <div className="flex flex-col gap-2">
-                    <a href="#about" className="flex min-h-10 items-center gap-2 text-base text-zinc-400 hover:text-white">
+                    <a href="#about" className="flex min-h-11 items-center gap-2 text-base text-zinc-400 hover:text-white">
                       <FileText className="h-4 w-4" />
                       about
                     </a>
-                    <a href="#contact" className="flex min-h-10 items-center gap-2 text-base text-zinc-400 hover:text-white">
+                    <a href="#contact" className="flex min-h-11 items-center gap-2 text-base text-zinc-400 hover:text-white">
                       <Mail className="h-4 w-4" />
                       contact us
                     </a>
-                    <a href="#security" className="flex min-h-10 items-center gap-2 text-base text-zinc-400 hover:text-white">
+                    <a href="#security" className="flex min-h-11 items-center gap-2 text-base text-zinc-400 hover:text-white">
                       <Shield className="h-4 w-4" />
                       security
                     </a>
