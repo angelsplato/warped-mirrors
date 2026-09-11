@@ -9,7 +9,7 @@ function Hero() {
       <div className="page-shell pb-12 sm:pb-16">
         <div className="max-w-6xl">
           <p className="mb-6 flex items-center gap-3 text-xs font-medium uppercase tracking-[0.14em] text-lime-300 sm:mb-8 sm:tracking-[0.18em]">
-            <span className="h-px w-8 bg-lime-300"></span> Built in South Africa
+            <span className="h-px w-8 bg-lime-300"></span> building for africa
           </p>
           <h1 className="type-display max-w-4xl text-balance font-medium text-white">
             The groundwork for an <span className="text-zinc-500">AI-ready</span> organisation.
