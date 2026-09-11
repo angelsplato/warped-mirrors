@@ -1,3 +1,5 @@
+import { Logo } from "./Logo"
+
 function SiteFooter() {
   const currentYear = new Date().getFullYear()
 
@@ -6,7 +8,7 @@ function SiteFooter() {
       <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-24">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <h2 className="text-lg font-semibold text-white">warpedmirrors</h2>
+            <Logo wordmarkClassName="text-lg font-semibold tracking-tight text-white" />
             <p className="mt-2 max-w-md text-sm leading-relaxed text-zinc-400">
               A data company building the foundations for useful AI in Africa.
             </p>

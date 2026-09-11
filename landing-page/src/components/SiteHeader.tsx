@@ -1,11 +1,14 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Menu } from "lucide-react"
+import { Logo } from "./Logo"
 
 function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-zinc-950" style={{ fontFamily: "Inter, sans-serif" }}>
       <div className="container mx-auto flex h-16 items-center justify-between px-6 md:px-12 lg:px-16 xl:px-24">
-        <a href="#" className="text-base font-semibold tracking-tight text-white">warpedmirrors</a>
+        <a href="#" aria-label="warpedmirrors home">
+          <Logo wordmarkClassName="text-base font-semibold tracking-tight text-white" />
+        </a>
         <nav aria-label="Main navigation" className="hidden md:flex items-center gap-6">
           <a href="#product" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">product</a>
           <a href="#approach" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">approach</a>
