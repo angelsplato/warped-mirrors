@@ -96,26 +96,26 @@ function HowItWorks() {
 
   return (
     <section id="industries" className="w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-zinc-950" style={{ fontFamily: 'Inter, sans-serif' }}>
-      <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-24">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24">
         <div className="flex flex-col space-y-2 sm:space-y-3 mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white">industries</h2>
-          <p className="max-w-[700px] text-zinc-400 text-sm sm:text-base">
+          <h2 className="text-3xl sm:text-4xl font-semibold tracking-[-0.03em] text-white">industries</h2>
+          <p className="max-w-[700px] text-base leading-7 text-zinc-400">
             trusted by teams across diverse sectors
           </p>
         </div>
 
         <Tabs defaultValue="law" className="w-full">
-          <TabsList className="w-full flex flex-wrap justify-start gap-2 h-auto bg-zinc-900 p-2 mb-6">
+          <TabsList className="mb-6 grid h-auto w-full grid-cols-2 gap-2 bg-zinc-900 p-2 sm:flex sm:flex-wrap sm:justify-start">
             {industries.map((industry) => {
               const Icon = industry.icon
               return (
                 <TabsTrigger
                   key={industry.id}
                   value={industry.id}
-                  className="flex items-center gap-2 data-[state=active]:bg-zinc-800 data-[state=active]:text-white text-zinc-400"
+                  className="flex w-full items-center gap-2 data-[state=active]:bg-zinc-800 data-[state=active]:text-white text-zinc-400 sm:w-auto"
                 >
                   <Icon className="h-4 w-4" />
-                  <span className="hidden sm:inline">{industry.title}</span>
+                  <span>{industry.title}</span>
                 </TabsTrigger>
               )
             })}
@@ -127,12 +127,12 @@ function HowItWorks() {
               <TabsContent key={industry.id} value={industry.id} id={`industry-${industry.id}`}>
                 <Card className="border-zinc-800 bg-zinc-900">
                   <CardHeader>
-                    <div className="flex items-start justify-between mb-3">
-                      <div className="flex items-center gap-3">
+                    <div className="mb-3 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                      <div className="flex items-start gap-3">
                         <Icon className="h-8 w-8 text-zinc-400" />
                         <CardTitle className="text-white text-2xl font-semibold">{industry.title}</CardTitle>
                       </div>
-                      <span className="text-xs px-3 py-1 rounded-full bg-zinc-950 text-zinc-400 border border-zinc-800">
+                      <span className="w-fit text-xs leading-5 px-3 py-1 rounded-full bg-zinc-950 text-zinc-400 border border-zinc-800">
                         {industry.status}
                       </span>
                     </div>
@@ -140,19 +140,19 @@ function HowItWorks() {
                       {industry.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="space-y-6">
+                    <CardContent className="space-y-6">
                     <div>
-                      <h4 className="text-sm font-semibold text-white mb-2">the challenge:</h4>
-                      <p className="text-sm text-zinc-500 leading-relaxed">
+                      <h4 className="text-base font-semibold text-white mb-2">the challenge:</h4>
+                      <p className="text-base text-zinc-400 leading-7">
                         {industry.challenge}
                       </p>
                     </div>
 
                     <div>
-                      <h4 className="text-sm font-semibold text-white mb-2">how we help:</h4>
+                      <h4 className="text-base font-semibold text-white mb-2">how we help:</h4>
                       <ul className="space-y-2">
                         {industry.solutions.map((solution, idx) => (
-                          <li key={idx} className="text-sm text-zinc-500 flex items-start gap-2">
+                          <li key={idx} className="text-base leading-7 text-zinc-400 flex items-start gap-2">
                             <span className="text-zinc-600 mt-1">•</span>
                             <span>{solution}</span>
                           </li>
@@ -161,10 +161,10 @@ function HowItWorks() {
                     </div>
 
                     <div>
-                      <h4 className="text-sm font-semibold text-white mb-2">impact:</h4>
+                      <h4 className="text-base font-semibold text-white mb-2">impact:</h4>
                       <ul className="space-y-2">
                         {industry.impact.map((item, idx) => (
-                          <li key={idx} className="text-sm text-zinc-500 flex items-start gap-2">
+                          <li key={idx} className="text-base leading-7 text-zinc-400 flex items-start gap-2">
                             <span className="text-zinc-600 mt-1">✓</span>
                             <span>{item}</span>
                           </li>

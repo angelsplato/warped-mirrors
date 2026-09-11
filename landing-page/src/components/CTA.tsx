@@ -4,12 +4,12 @@ import { ArrowRight } from "lucide-react"
 function CTA() {
   return (
     <section className="w-full py-12 sm:py-16 md:py-20 lg:py-28 bg-zinc-900" style={{ fontFamily: 'Inter, sans-serif' }}>
-      <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-24">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24">
         <div className="max-w-3xl mx-auto text-center space-y-4 sm:space-y-6">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-white">
+          <h2 className="text-[clamp(2rem,8vw,3.5rem)] font-semibold tracking-[-0.04em] leading-[1.08] text-white">
             ready to unlock information trapped in your documents?
           </h2>
-          <p className="text-base sm:text-lg text-zinc-400 leading-relaxed max-w-2xl mx-auto">
+          <p className="mx-auto max-w-2xl text-base leading-7 text-zinc-400 sm:text-lg sm:leading-8">
             start with scanwise—available now for law firms. transform your document workflows with ai-powered text extraction and document intelligence.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-2 sm:pt-4">
@@ -21,7 +21,7 @@ function CTA() {
               <a href="#products">explore products</a>
             </Button>
           </div>
-          <p className="text-xs sm:text-sm text-zinc-500 pt-2">
+          <p className="pt-2 text-sm leading-6 text-zinc-500">
             scanwise ready now • more products coming soon • built for africa
           </p>
         </div>
