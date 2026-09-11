@@ -1,10 +1,10 @@
 import './App.css'
-import Header from './components/Header'
+import Header from './components/SiteHeader'
 import Hero from './components/Hero'
 import Products from './components/Features'
-import HowItWorks from './components/HowItWorks'
+import Approach from './components/Approach'
 import CTA from './components/CTA'
-import Footer from './components/Footer'
+import Footer from './components/SiteFooter'
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Hero />
       <Products />
-      <HowItWorks />
+      <Approach />
       <CTA />
       <Footer />
     </div>

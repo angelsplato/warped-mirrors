@@ -36,7 +36,7 @@ function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-6 md:px-12 lg:px-16 xl:px-24">
         <div className="flex items-center gap-2">
           <h1 className="text-base font-semibold tracking-tight text-white" style={{ fontFamily: 'Inter, sans-serif' }}>
-            warped mirrors
+            warpedmirrors
           </h1>
         </div>
 
@@ -173,9 +173,11 @@ function Header() {
           </DropdownMenu>
         </nav>
         <div className="flex items-center gap-4">
-          <Button size="sm" className="hidden md:flex bg-white hover:bg-zinc-100 text-zinc-950 items-center gap-2">
-            book a demo
-            <ArrowRight className="h-4 w-4" />
+          <Button size="sm" className="hidden md:flex bg-white hover:bg-zinc-100 text-zinc-950 items-center gap-2" asChild>
+            <a href="#contact">
+              get in touch
+              <ArrowRight className="h-4 w-4" />
+            </a>
           </Button>
 
           {/* Mobile Menu */}
@@ -260,9 +262,11 @@ function Header() {
                 </div>
 
                 {/* Mobile CTA */}
-                <Button className="w-full bg-white hover:bg-zinc-100 text-zinc-950 flex items-center gap-2 mt-4">
-                  book a demo
-                  <ArrowRight className="h-4 w-4" />
+                <Button className="w-full bg-white hover:bg-zinc-100 text-zinc-950 flex items-center gap-2 mt-4" asChild>
+                  <a href="#contact">
+                    get in touch
+                    <ArrowRight className="h-4 w-4" />
+                  </a>
                 </Button>
               </div>
             </SheetContent>
