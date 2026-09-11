@@ -1,10 +1,10 @@
 function HowItWorks() {
   return (
-    <section id="approach" className="bg-[#09090b] py-24 sm:py-32">
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
+    <section id="approach" className="bg-[#09090b] py-20 sm:py-32">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-8 lg:px-12">
         <p className="eyebrow">The approach</p>
-        <div className="mt-5 grid gap-12 lg:grid-cols-[1fr_1.4fr]">
-          <h2 className="max-w-md text-4xl font-medium leading-[0.95] tracking-[-0.06em] text-white sm:text-6xl">
+        <div className="mt-5 grid gap-10 sm:gap-12 lg:grid-cols-[1fr_1.4fr]">
+          <h2 className="max-w-md text-[clamp(2.25rem,10vw,3.75rem)] font-medium leading-[0.95] tracking-[-0.06em] text-white">
             Build the foundation before the frontier.
           </h2>
           <div className="divide-y divide-white/10 border-t border-white/10">
@@ -16,8 +16,8 @@ function HowItWorks() {
               <article key={number} className="grid gap-4 py-7 sm:grid-cols-[4rem_1fr] sm:gap-8 sm:py-9">
                 <span className="text-sm text-lime-300">{number}</span>
                 <div>
-                  <h3 className="text-2xl tracking-[-0.04em] text-white">{title}</h3>
-                  <p className="mt-3 max-w-lg leading-relaxed text-zinc-400">{description}</p>
+                  <h3 className="text-2xl leading-tight tracking-[-0.04em] text-white">{title}</h3>
+                  <p className="mt-3 max-w-lg text-base leading-7 text-zinc-400">{description}</p>
                 </div>
               </article>
             ))}
