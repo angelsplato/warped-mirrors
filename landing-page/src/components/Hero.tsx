@@ -1,39 +1,46 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowDownRight, ArrowUpRight } from "lucide-react"
 
 function Hero() {
   return (
-    <section className="w-full bg-zinc-950 py-10 sm:py-16 md:py-24 lg:py-32 xl:py-40" style={{ fontFamily: 'Inter, sans-serif' }}>
-      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24">
-        <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12 xl:gap-16">
-          <div className="flex flex-col justify-center space-y-5 sm:space-y-6">
-            <div className="space-y-3 sm:space-y-4">
-              <div className="inline-block">
-                <span className="inline-flex text-xs leading-5 sm:text-sm font-medium px-3 py-1 rounded-full bg-zinc-900 text-zinc-400 border border-zinc-800">
-                  catapulting africa to the forefront of the ai age
-                </span>
-              </div>
-              <h1 className="max-w-2xl text-[clamp(2.25rem,9vw,4rem)] font-semibold tracking-[-0.04em] text-white leading-[1.05]">
-                turn every document into structured data
-              </h1>
-              <p className="max-w-[600px] text-base leading-7 text-zinc-400 sm:text-lg sm:leading-8">
-                critical information is trapped in documents, inaccessible to the people and systems that need it. we unlock that information with ai-powered document intelligence—starting with scanwise.
-              </p>
-            </div>
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <Button size="lg" className="bg-white hover:bg-zinc-100 text-zinc-950 flex items-center justify-center gap-2 w-full sm:w-auto">
-                book a demo
-                <ArrowRight className="h-4 w-4" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-zinc-700 text-zinc-300 hover:bg-zinc-900 hover:text-white w-full sm:w-auto" asChild>
-                <a href="#products">explore products</a>
-              </Button>
+    <section className="relative isolate overflow-hidden border-b border-white/10 pt-24 sm:pt-32">
+      <div className="absolute inset-0 -z-10 bg-[#09090b]"></div>
+      <div className="hero-grid absolute inset-0 -z-10 opacity-50"></div>
+      <div className="absolute -right-32 top-16 -z-10 h-[34rem] w-[34rem] rounded-full bg-lime-300/10 blur-[120px]"></div>
+      <div className="mx-auto max-w-[1440px] px-4 pb-12 sm:px-8 lg:px-12 lg:pb-16">
+        <div className="max-w-6xl">
+          <p className="mb-6 flex items-center gap-3 text-xs font-medium uppercase tracking-[0.14em] text-lime-300 sm:mb-8 sm:tracking-[0.18em]">
+            <span className="h-px w-8 bg-lime-300"></span> Built in South Africa
+          </p>
+          <h1 className="max-w-6xl text-balance text-[clamp(3rem,13vw,9.5rem)] font-medium leading-[0.9] tracking-[-0.065em] text-white sm:leading-[0.88] sm:tracking-[-0.075em]">
+            The groundwork for an <span className="text-zinc-500">AI-ready</span> organisation.
+          </h1>
+        </div>
+        <div className="mt-10 grid items-end gap-8 border-t border-white/10 pt-7 sm:mt-12 sm:gap-10 lg:grid-cols-[1fr_1.4fr]">
+          <div className="text-sm uppercase tracking-[0.13em] text-zinc-500">warpedmirrors / 01</div>
+          <div>
+            <p className="max-w-xl text-base leading-7 tracking-[-0.02em] text-zinc-300 sm:text-xl sm:leading-relaxed">
+              We do the unglamorous data work that helps legacy organisations compete in the AI age.
+            </p>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a href="#contact" className="inline-flex min-h-11 items-center justify-center gap-2 bg-lime-300 px-5 py-3 text-sm font-medium text-zinc-950 transition hover:bg-lime-200">
+                Start a conversation <ArrowUpRight className="h-4 w-4" />
+              </a>
+              <a href="#product" className="inline-flex min-h-11 items-center justify-center gap-2 border border-white/20 px-5 py-3 text-sm font-medium text-white transition hover:border-white/50 hover:bg-white/5">
+                Explore the work <ArrowDownRight className="h-4 w-4" />
+              </a>
             </div>
           </div>
-          <div className="flex items-center justify-center order-first lg:order-last">
-            <div className="relative flex h-52 w-full items-center justify-center rounded-lg border border-zinc-800 bg-zinc-900 sm:h-[300px] md:h-[350px] lg:h-[400px]">
-              <span className="text-zinc-600 font-medium text-xs sm:text-sm">product visualization</span>
-            </div>
+        </div>
+        <div className="relative mt-14 overflow-hidden border border-white/10 bg-zinc-950 p-4 sm:mt-24 sm:p-8">
+          <div className="absolute right-0 top-0 h-24 w-24 border-b border-l border-lime-300/60"></div>
+          <div className="relative grid min-h-[250px] gap-5 sm:grid-cols-3">
+            {["Legacy systems", "Structured data", "Useful intelligence"].map((label, index) => (
+              <div key={label} className="flex flex-col justify-between border border-white/10 bg-white/[0.02] p-5">
+                <span className="text-xs text-zinc-500">0{index + 1}</span>
+                <span className="max-w-28 text-xl leading-tight tracking-[-0.04em] text-zinc-100">{label}</span>
+                <div className={`h-1 w-full ${index === 1 ? "bg-lime-300" : "bg-zinc-700"}`}></div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
