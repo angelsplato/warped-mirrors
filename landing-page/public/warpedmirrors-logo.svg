@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 160" role="img" aria-labelledby="title">
+  <title id="title">warpedmirrors</title>
+  <g fill="none" stroke="#B7F34A" stroke-width="7">
+    <rect x="8" y="22" width="65" height="116"/>
+  </g>
+  <path fill="#B7F34A" d="M88 22h81l-23 116H88z"/>
+  <text x="200" y="107" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="70" font-weight="500" letter-spacing="-3">warpedmirrors</text>
+</svg>

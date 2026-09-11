@@ -7,9 +7,12 @@ function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#09090b]/80 backdrop-blur-xl">
       <div className="page-shell flex min-h-16 items-center justify-between">
-        <a href="#" className="flex min-h-11 items-center gap-2.5 text-[15px] font-semibold tracking-[-0.04em] text-white">
-          <span className="grid h-5 w-5 place-items-center border border-lime-300/80 text-[10px] text-lime-300">w</span>
-          warpedmirrors
+        <a href="#" className="flex min-h-11 items-center" aria-label="warpedmirrors home">
+          <img
+            src="/warpedmirrors-logo.svg"
+            alt="warpedmirrors"
+            className="h-7 w-auto sm:h-8"
+          />
         </a>
         <nav aria-label="Primary navigation" className="hidden items-center gap-8 md:flex">
           <a href="#product" className="nav-link flex min-h-11 items-center">Product</a>
