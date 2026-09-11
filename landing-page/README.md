@@ -1,10 +1,10 @@
-# Warped Mirrors Landing Page
+# warpedmirrors landing page
 
-A modern, responsive landing page for Warped Mirrors - an AI-powered document intelligence platform. Built with React, TypeScript, Tailwind CSS, and shadcn/ui components.
+A modern, responsive marketing site for warpedmirrors. Built with React, TypeScript, Tailwind CSS, and shadcn/ui components.
 
-## 🎯 Mission
+## Mission
 
-Catapulting Africa to the forefront of the AI age with intelligent document processing solutions.
+We do the boring groundwork that enables legacy organisations to compete in the age of AI. Our first product is a skills server for the South African market.
 
 ## 📋 Prerequisites
 
@@ -185,38 +185,18 @@ npx shadcn@latest add button
 
 This will add the component to `src/components/ui/`.
 
-## 🚢 Deployment
+## 🚢 Deployment on Vercel
 
-The project includes configurations for multiple deployment options:
+Import the GitHub repository into Vercel and configure the project with:
 
-### Option 1: AWS Amplify (Recommended for Simple Deployments)
+- **Root Directory:** `landing-page`
+- **Build Command:** `npm run build`
+- **Output Directory:** `dist`
+- **Install Command:** `npm ci` (Vercel's default is also suitable)
 
-```bash
-npm install -g @aws-amplify/cli
-amplify init
-amplify add hosting
-amplify publish
-```
+`vercel.json` includes these build settings and an SPA fallback, so direct requests to client-side paths serve `index.html`.
 
-### Option 2: S3 + CloudFront (Production-Grade)
-
-```bash
-# Build the project
-npm run build
-
-# Deploy using the provided script
-chmod +x deploy-to-s3.sh
-./deploy-to-s3.sh <bucket-name> <distribution-id>
-```
-
-### Option 3: Vercel/Netlify
-
-1. Connect your GitHub repository
-2. Set build command: `npm run build`
-3. Set publish directory: `dist`
-4. Deploy!
-
-See `AWS-DEPLOYMENT.md` for detailed AWS deployment instructions.
+After the first deployment, add `warpedmirrors.com` and `www.warpedmirrors.com` in Vercel's domain settings. Point the domain's DNS records to Vercel as directed in the dashboard, then choose one canonical domain and redirect the other to it. The canonical metadata currently uses `https://warpedmirrors.com`.
 
 ## 🐛 Troubleshooting
 
