@@ -1,31 +1,22 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 
 function CTA() {
   return (
-    <section className="w-full py-12 sm:py-16 md:py-20 lg:py-28 bg-zinc-900" style={{ fontFamily: 'Inter, sans-serif' }}>
-      <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-24">
-        <div className="max-w-3xl mx-auto text-center space-y-4 sm:space-y-6">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-white">
-            building for a market you know deeply?
-          </h2>
-          <p className="text-base sm:text-lg text-zinc-400 leading-relaxed max-w-2xl mx-auto">
-            We are working on practical AI foundations for South African organisations. Let&apos;s talk about the difficult, valuable work in front of you.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-2 sm:pt-4">
-            <Button size="lg" className="bg-white hover:bg-zinc-100 text-zinc-950 flex items-center justify-center gap-2 w-full sm:w-auto" asChild>
-              <a href="#contact">
-                get in touch
-                <ArrowRight className="h-4 w-4" />
-              </a>
-            </Button>
-            <Button size="lg" variant="outline" className="border-zinc-700 text-zinc-300 hover:bg-zinc-800 hover:text-white w-full sm:w-auto" asChild>
-              <a href="#approach">our approach</a>
-            </Button>
+    <section id="contact" className="border-y border-white/10 bg-lime-300 py-24 text-zinc-950 sm:py-32">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
+        <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr]">
+          <p className="text-sm uppercase tracking-[0.14em] text-zinc-800">The next layer starts here</p>
+          <div>
+            <h2 className="max-w-4xl text-5xl font-medium leading-[0.9] tracking-[-0.07em] sm:text-7xl">
+              Ready to make your data useful?
+            </h2>
+            <p className="mt-7 max-w-xl text-lg leading-relaxed text-zinc-800">
+              Tell us where the groundwork is getting in the way. We are building for the next era of South African organisations.
+            </p>
+            <a href="mailto:hello@warpedmirrors.com" className="mt-10 inline-flex items-center gap-2 bg-zinc-950 px-5 py-3 text-sm font-medium text-white transition hover:bg-zinc-800">
+              Get in touch <ArrowUpRight className="h-4 w-4" />
+            </a>
           </div>
-          <p className="text-xs sm:text-sm text-zinc-500 pt-2">
-            skills server • data foundations • nano cloud
-          </p>
         </div>
       </div>
     </section>
