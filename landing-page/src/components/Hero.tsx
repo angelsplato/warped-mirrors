@@ -8,7 +8,7 @@ function Hero() {
       <div className="absolute -right-32 top-16 -z-10 h-[34rem] w-[34rem] rounded-full bg-lime-300/10 blur-[120px]"></div>
       <div className="page-shell pb-12 sm:pb-16">
         <div className="max-w-6xl">
-          <p className="mb-6 flex items-center gap-3 text-xs font-medium uppercase tracking-[0.14em] text-lime-300 sm:mb-8 sm:tracking-[0.18em]">
+          <p className="mb-6 flex items-center gap-3 text-xs font-medium tracking-[0.14em] text-lime-300 sm:mb-8 sm:tracking-[0.18em]">
             <span className="h-px w-8 bg-lime-300"></span> building for africa
           </p>
           <h1 className="type-display max-w-4xl text-balance font-medium text-white">
